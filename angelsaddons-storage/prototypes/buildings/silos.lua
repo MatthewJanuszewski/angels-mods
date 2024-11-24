@@ -19,6 +19,7 @@ if angelsmods.addons.storage.silos or angelsmods.addons.storage.oresilos then
       icon = "__angelsaddons-storage__/graphics/icons/silo.png",
       icon_size = 32,
       flags = { "placeable-neutral", "player-creation" },
+      collision_mask = {layers={item=true, meltable=true, object=true, player=true, water_tile=true, is_object=true, is_lower_object=true}},
       minable = { mining_time = 1, result = "silo" },
       max_health = 300,
       corpse = "small-remnants",

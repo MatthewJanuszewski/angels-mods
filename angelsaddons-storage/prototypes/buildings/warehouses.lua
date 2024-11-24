@@ -29,6 +29,7 @@ if angelsmods.addons.storage.warehouses then
       icon = "__angelsaddons-storage__/graphics/icons/warehouse.png",
       icon_size = 32,
       flags = { "placeable-neutral", "player-creation" },
+      collision_mask = {layers={item=true, meltable=true, object=true, player=true, water_tile=true, is_object=true, is_lower_object=true, elevated_rail=true}},
       minable = { mining_time = 1, result = "angels-warehouse" },
       max_health = 300,
       corpse = "small-remnants",
