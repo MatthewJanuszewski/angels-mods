@@ -76,7 +76,7 @@ if angelsmods.addons.storage.warehouses then
     cont_add.name = "angels-warehouse-" .. stat.mode
     cont_add.type = "logistic-container"
     cont_add.icon = "__angelsaddons-storage__/graphics/icons/warehouse-log-" .. name .. ".png"
-    cont_add.picture.filename = "__angelsaddons-storage__/graphics/entity/warehouse-log-" .. name .. "-hr.png"
+    cont_add.picture.filename = "__angelsaddons-storage__/graphics/entity/warehouse-log-" .. name .. ".png"
     cont_add.picture.size = { 512, 576 }
     cont_add.picture.scale = 0.5
     cont_add.minable.result = "angels-warehouse-" .. stat.mode

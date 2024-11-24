@@ -35,14 +35,12 @@ if angelsmods.addons.storage.pressuretank then
       window_bounding_box = { { -0.125, 0.6875 }, { 0.1875, 1.1875 } },
       pictures = {
         picture = {
-          sheet = {
-            filename = "__angelsaddons-storage__/graphics/entity/pressure-tank-1.png",
-            priority = "extra-high",
-            frames = 1,
-            width = 224,
-            height = 224,
-            shift = { 0, 0 },
-          },
+          filename = "__angelsaddons-storage__/graphics/entity/pressure-tank-1.png",
+          priority = "extra-high",
+          frames = 1,
+          size = { 448, 448 },
+          scale = 0.5,
+          shift = { 0, 0 },
         },
         fluid_background = {
           filename = "__base__/graphics/entity/storage-tank/fluid-background.png",
