@@ -37,12 +37,12 @@ if angelsmods.addons.storage.oresilos and angelsmods.refining then
         {
           name = "silo-" .. ore_name,
           ingredients = {
-            { type = "item", name = "angels-" .. ore_name .. "-crushed", amount = 10 },
+            { "angels-" .. ore_name .. "-crushed", 10 },
           },
         },
       })
     else
-      angelsmods.functions.hide("silo-" .. ore_name)
+      angelsmods.functions.add_flag("silo-" .. ore_name, "hidden")
       angelsmods.functions.OV.disable_recipe("silo-" .. ore_name)
     end
   end
@@ -50,7 +50,7 @@ if angelsmods.addons.storage.oresilos and angelsmods.refining then
     {
       name = "silo-coal",
       ingredients = {
-        { type = "item", name = angelsmods.petrochem and "coal-crushed" or "coal", amount = 10 },
+        { angelsmods.petrochem and "coal-crushed" or "coal", 10 },
       },
     },
   })

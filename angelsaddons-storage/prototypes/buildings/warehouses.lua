@@ -29,7 +29,6 @@ if angelsmods.addons.storage.warehouses then
       icon = "__angelsaddons-storage__/graphics/icons/warehouse.png",
       icon_size = 32,
       flags = { "placeable-neutral", "player-creation" },
-      collision_mask = angelsmods.functions.set_building_collision_mask('container', {'elevated_rail'}),
       minable = { mining_time = 1, result = "angels-warehouse" },
       max_health = 300,
       corpse = "small-remnants",
@@ -45,12 +44,12 @@ if angelsmods.addons.storage.warehouses then
       selection_box = { { -3, -3 }, { 3, 3 } },
       fast_replaceable_group = "angels-warehouse",
       inventory_size = 768,
-      vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+      impact_category = "metal",
       picture = {
-        filename = "__angelsaddons-storage__/graphics/entity/warehouse.png",
+        filename = "__angelsaddons-storage__/graphics/entity/warehouse-hr.png",
+        size = { 512, 576 },
+        scale = 0.5,
         priority = "extra-high",
-        width = 256,
-        height = 288,
         shift = { 0, -0.5 },
       },
       circuit_wire_connection_point = circuit_connector_definitions["chest"].points,
@@ -76,7 +75,9 @@ if angelsmods.addons.storage.warehouses then
     cont_add.name = "angels-warehouse-" .. stat.mode
     cont_add.type = "logistic-container"
     cont_add.icon = "__angelsaddons-storage__/graphics/icons/warehouse-log-" .. name .. ".png"
-    cont_add.picture.filename = "__angelsaddons-storage__/graphics/entity/warehouse-log-" .. name .. ".png"
+    cont_add.picture.filename = "__angelsaddons-storage__/graphics/entity/warehouse-log-" .. name .. "-hr.png"
+    cont_add.picture.size = { 512, 576 }
+    cont_add.picture.scale = 0.5
     cont_add.minable.result = "angels-warehouse-" .. stat.mode
     cont_add.logistic_mode = stat.mode
     cont_add.inventory_size = stat.stacks
