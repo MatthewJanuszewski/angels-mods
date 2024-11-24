@@ -46,7 +46,7 @@ if angelsmods.addons.storage.warehouses then
       inventory_size = 768,
       impact_category = "metal",
       picture = {
-        filename = "__angelsaddons-storage__/graphics/entity/warehouse-hr.png",
+        filename = "__angelsaddons-storage__/graphics/entity/warehouse.png",
         size = { 512, 576 },
         scale = 0.5,
         priority = "extra-high",
